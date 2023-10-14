@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+.App div{
+  /* display: flex;
+  justify-content: center; */
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.monkey_img {
+  margin: 2px;
+  position: relative;
+}
+
+.monkey_img.active {
+  outline: 2px solid blue;
+}
+
+.img_name {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+.loading{
+  margin: auto;
+}
+#load_div {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background: grey;
+  opacity: 0.5;
+}
+.loading_disable{
+  display: none !important;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nft_layer {
+  position: absolute;
+}
+
+.character {
+  position: relative;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+}
+.nft_layer{
+  width: 100%;
+  height: 100%;
+}
+.nft_layer img{
+  width: 100%;
+  height: 100%;
+}
+
+#background_layer {
+  z-index: 0;
+}
+
+#accessories_layer {
+  z-index: 7;
+}
+
+#claws_layer {
+  z-index: 6;
+}
+
+#clothes_layer {
+  z-index: 2;
+}
+
+#head_layer {
+  z-index: 5;
+}
+
+#neck_layer {
+  z-index: 4;
+}
+
+#pedestal_layer {
+  z-index: 3;
+}
+
+#skins_layer {
+  z-index: 1;
+}
